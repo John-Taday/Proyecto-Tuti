@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.cLogo{
+    display: flex;
+}
+.cLogo img{
+    height: 80px;
+}
+.cMenu{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 5, 121);
+    height: 70px;
+    padding: 10px;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    margin-left:83px;
+    color: white;
+    font-size: 18px;
+}
+nav a:hover{
+    background-color: rgb(45, 51, 57);
+    padding: 13px;
+}
+section h2{
+    font-size: 17px;
+}
+section p{
+    text-align: left;
+}
+.quienesSomos{
+    display: flex;
+}
+.sobre{
+    margin: 10px;
+    padding: 30px;
+    font-size: 15px;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.ICajero{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.trabaja{
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+.hojaV{
+    color: yellow;
+    background-color: rgb(5, 5, 121);
+    height: 40px;
+    width: 730px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    padding: 70px;
+    color: yellow;
+    background-color: rgb(5, 5, 121);;
+    height: 165px;
+    line-height: 1.8;
+}
+.contactanos{
+    margin-left: 90px;
+}
+.sobreNosotros{
+    margin-left: 90px;
+    line-height: 2;
+}
+.btnMenu{
+    display: none;
+}
+/*version movil*/
+@media screen and (max-width: 767px) {
+    .btnMenu {
+        display: block;
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(52, 50, 47);
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.4s;
+        z-index: 99;
+    }
+
+    .encabezado a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        color: white; /* Para asegurar que el texto sea visible */
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .encabezado a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .show {
+        left: 0;
+    }
+}
+
+
+
